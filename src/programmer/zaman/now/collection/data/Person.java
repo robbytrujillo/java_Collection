@@ -1,6 +1,8 @@
 package programmer.zaman.now.collection.data;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Person {
@@ -18,8 +20,12 @@ public class Person {
        hobbies.add(hobby);
     }
 
+//    public List<String> getHobbies(){
+//        return hobbies;
+//    }
+    //sollution Konversi Immutable List
     public List<String> getHobbies(){
-        return hobbies;
+        return Collections.unmodifiableList(hobbies);
     }
 
     public String getName() {
