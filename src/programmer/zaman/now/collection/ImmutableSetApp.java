@@ -13,7 +13,7 @@ public class ImmutableSetApp {
         Set<String> mutable = new HashSet<>();
         mutable.add("Robby");
         mutable.add("Ilham");
-        Set<String> immutable = Collections.unmodifiableList(mutable);
+        Set<String> immutable = Collections.unmodifiableSet(mutable);
 
         Set<String> set = Set.of("Robby", "Ilham");
 
