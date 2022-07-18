@@ -1,5 +1,6 @@
 package programmer.zaman.now.collection;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
 
