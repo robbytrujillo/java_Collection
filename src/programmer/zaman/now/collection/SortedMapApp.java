@@ -1,5 +1,6 @@
 package programmer.zaman.now.collection;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.SortedMap;
 import java.util.TreeMap;
@@ -24,6 +25,10 @@ public class SortedMapApp {
             System.out.println(key);
         }
 
+        SortedMap<String, String> empty = Collections.emptySortedMap();
+        SortedMap<String, String> immutable = Collections.unmodifiableSortedMap(sortedMap);
+
+       // immutable.put("Asep", "Asep"); //error
     }
 
 }
